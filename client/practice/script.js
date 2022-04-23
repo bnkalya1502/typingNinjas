@@ -4,6 +4,11 @@ let cursorIdx = 0;
 let details = {};
 let Letters;
 
+const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', ()=>{
+  document.body.classList.toggle('dark');
+})
 function loadParagraph(){
     const ParagraphDiv = document.querySelector('.paragraph');
     for (let i = 0; i < Text.length; i++) {
